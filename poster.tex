@@ -1,0 +1,322 @@
+% Gemini theme
+% https://github.com/anishathalye/gemini
+%
+% We try to keep this Overleaf template in sync with the canonical source on
+% GitHub, but it's recommended that you obtain the template directly from
+% GitHub to ensure that you are using the latest version.
+
+\documentclass[final]{beamer}
+
+% ====================
+% Packages
+% ====================
+\usepackage{emoji}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+%\usepackage[size=custom,width=120,height=72,scale=1.0]{beamerposter}
+%\usepackage[size=custom,width=132,height=84,scale=1.0]{beamerposter}
+\usepackage[size=custom,width=122,height=91,scale=1.0]{beamerposter}
+\usetheme{gemini}
+\usecolortheme{mit}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tikz}
+% \usetikzlibrary{shapes.geometric, arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.14}
+\usepackage{csquotes}
+\definecolor{washured}{RGB}{165, 20, 23}
+\usepackage{fontspec}
+
+\definecolor{myorange}{RGB}{255,165,0}
+\definecolor{mypurple}{HTML}{800080}
+\definecolor{mygray}{gray}{0.5}
+
+\usepackage{tcolorbox} % Required for colored boxes
+
+% Define a yellow box command
+\newcommand{\yellowbox}[1]{\tikz[baseline=-0.5ex] \node[draw=black, fill=yellow, rounded corners=2pt, inner sep=2pt] {#1};}
+
+% Define a blue box command
+\newcommand{\bluebox}[1]{\tikz[baseline=-0.5ex] \node[draw=black, fill=blue!50, rounded corners=2pt, inner sep=2pt, text=white] {#1};}
+
+
+\newcommand{\purplesquare}{\tikz[baseline=-0.5ex] \draw[black, fill=purple, rounded corners=2pt] (0,0) rectangle (0.8em,0.8em);}
+\newcommand{\yellowsquare}{\tikz[baseline=-0.5ex] \draw[black, fill=yellow, rounded corners=2pt] (0,0) rectangle (0.8em,0.8em);}
+\newcommand{\bluesquare}{\tikz[baseline=-0.5ex] \draw[black, fill=blue, rounded corners=2pt] (0,0) rectangle (0.8em,0.8em);}
+
+% ====================
+% Lengths
+% ====================
+
+% If you have N columns, choose \sepwidth and \colwidth such that
+% (N+1)*\sepwidth + N*\colwidth = \paperwidth
+\newlength{\sepwidth}
+\newlength{\colwidth}
+\setlength{\sepwidth}{0.025\paperwidth}
+\setlength{\colwidth}{0.3\paperwidth}
+
+\newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
+
+% ====================
+% Title
+% ====================
+
+%\title{\#TriggerBabes: Republican women strategically and effectively employ gun imagery to navigate the double-bind}
+\title{Targeting the double bind: Republican women strategically and effectively employ gun imagery to display conservatism, masculinity, and femininity}
+% The cold is not for the faint of heart. ⛄️I got tired of indoor ranges. I’d rather be outdoors than stuck in a stall where I can’t pull from my holster. ❄️🔥❄️... #triggerbabes⠀
+
+\author{Nathan Englehart}
+
+\institute[shortinst]{\inst{1} Washington University in Saint Louis}
+
+% ====================
+% Footer (optional)
+% ====================
+
+% \footercontent{
+%   \href{https://www.example.com}{https://www.example.com} \hfill
+%   ABC Conference 2025, New York --- XYZ-1234 \hfill
+%   \href{mailto:alyssa.p.hacker@example.com}{alyssa.p.hacker@example.com}}
+%\footercontent{
+%  \href{https://nathanenglehart.github.io}{https://nathanenglehart.github.io} \hfill
+%  Prepared for Mid-American Conference for Race, Gender, Immigration, and Ethnicity Politics (MARGIE) 2025 \hfill
+%  \href{enathan@wustl.edu}{enathan@wustl.edu}}
+% (can be left out to remove footer)
+
+% ====================
+% Logo (optional)
+% ====================
+
+\logoleft{\includegraphics[height=9cm]{logos/Shield_open_pos1000-01.png}}
+
+
+% use this to include logos on the left and/or right side of the header:
+% \logoright{\includegraphics[height=7cm]{logo1.pdf}}
+% \logoleft{\includegraphics[height=7cm]{logo2.pdf}}
+
+% ====================
+% Body
+% ====================
+
+\newcommand{\snowman}{\includegraphics[height=1em]{snowman.png}}
+\newcommand{\fire}{\includegraphics[height=1em]{fire.png}}
+\newcommand{\snowflake}{\includegraphics[height=1em]{snowflake.png}}
+
+\begin{document}
+
+\begin{frame}[t]
+\begin{columns}[t]
+\separatorcolumn
+
+\begin{column}{\colwidth}
+
+\begin{block}{Targeting the double bind} 
+%\begin{quote}
+%\snowman I got tired of indoor ranges... \snowflake \fire \snowflake ... \textbf{\#triggerbabes} -- Instagram caption from Rep. Anna Paulina Luna posing with an assault rifle in the snow
+%\end{quote}
+GOP women appear to use gun imagery at heightened rates. This is puzzling. It could be explained by the fact that GOP women must over-emphasize their conservatism to counteract stereotypes that portray them as ideologically moderate \cite{king-matland-2003, schneider-bos-2016}. However, guns are also symbols of masculinity \cite{connell-1995, gibson-1994}, and women face backlash for appearing 'overly' masculine \cite{bauer-carpinella-2018, bauer-2017}.
+
+Existing research on this phenomenon relies on small $N$ case studies. Scholars argue that GOP women use firearms to 'meet masculine expectations' \cite{dittmar-cawp} while simultaneously constructing a 'rugged femininity' \cite{germanaz-2024}. I test the following \textbf{targeting the double bind theory}.
+% https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ%3A_A_Tutorial_for_Beginners_(Part_3)%E2%80%94Creating_Flowcharts
+
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\begin{center}
+\begin{tikzpicture}[node distance=2.5cm]
+   [scale=.8,auto=left,every node/.style={circle,fill=blue!20}]
+\node (in1) [io, below of=start] {GOP women need to appear simultaneously feminine, conservative, and masculine}; 
+\node (pro1) [process, below of=in1] {GOP women strategically choose messaging that conveys all three};
+\node (dec1) [decision, below of=pro1] {One effective strategy is employing gun imagery};
+\node (stop) [startstop, below of=dec1] {GOP women will be rewarded for successfully conveying masc, fem, and conservatism};
+
+\draw [->, line width=1mm] (in1) -- (pro1);
+\draw [->, line width=1mm] (pro1) -- (dec1);
+\draw[->, line width=1mm] (dec1) -- (stop);
+
+\end{tikzpicture}
+\end{center}
+\end{block}
+
+%\begin{block}{Do it for the 'Gram!}
+%Instagram is the 3rd most popular social media website in the United States (behind YouTube and Facebook) \cite{262a3e8a-f258-3b4a-a589-ce0f62893e5a}. All but two Republican representatives in the $118$\textit{th} congress use Instagram.
+%\end{block}
+
+\begin{block}{Detecting guns in Instagram images}
+
+I compile an original corpus of all public Instagram posts from the accounts of $224$ Republican members of the $118$\textit{th} U.S. House of Representatives (HRs). The $118$\textit{th} Congress spanned from 01-03-2023 to 01-03-2025. I collect all posts from each account. \footnote{\footnotesize{Instagram is the 3rd most popular social media website in the United States \cite{262a3e8a-f258-3b4a-a589-ce0f62893e5a}.}}
+
+\begin{table}[!htb]
+\centering
+\label{tab:tab1}
+%{\large
+\begin{tabular}{c|c}
+\textbf{Instagram feature} & $N$ \\
+\hline
+individual images & $344,618$ \\ 
+individual posts & $235,898$  \\
+individual accounts & $318$  
+\end{tabular}
+%}
+\end{table}
+
+There are $35$ women and $189$ men HRs. I next apply the following process to the corpus.
+
+\begin{enumerate}
+%\item Zero-shot object detection with \texttt{yolo-world} \cite{cheng2024yolow} %{\tiny \textcolor{gray}{(Cheng et al., 2024)}}
+\item Perform zero-shot object detection using \texttt{yolo-world} \cite{cheng2024yolow} 
+\begin{itemize}
+\item \textbf{Validation accuracy is 0.9} ($n = 500$)
+\end{itemize}
+%\item DSL to ensure no classification bias {\tiny \textcolor{gray}{(Egami et al, 2023, 2024)}} 
+\item $>40,000$ expert-labels used in DSL correction to ensure no classification bias \cite{NEURIPS2023_d862f7f5} %{\tiny \textcolor{gray}{(Egami et al, 2023, 2024)}} 
+\begin{itemize}
+\item \textbf{Validation accuracy becomes 1.0} (same $n = 500$)
+\end{itemize}
+%\item Manually remove images where firearms is not prominent (e.g. military and police photos) and photos in which the HR is not present
+\item Manually remove images that do not feature the HR
+\end{enumerate}
+%\item Define the outcome variable for each HR $i$ as $\frac{\#\textit{GunPosts}_i}{\#\textit{NumPosts}_i} \in [0,1]$ %Example images in which firearms were detected are shown below.
+\begin{figure}[!htb]
+    \centering
+%\caption{Object detection on Instagram posts of GOP women HRs posing with guns}
+    \begin{subfigure}{\linewidth}
+    \begin{center}
+    \includegraphics[width=0.22\textwidth]{figures/fig_yolow_pics/fig_pic_1-nancy_mace.png} 
+    \includegraphics[width=0.22\textwidth]{figures/fig_yolow_pics/fig_pic_9-kat_cammack.png}
+    \includegraphics[width=0.22\textwidth]{figures/fig_yolow_pics/fig_pic_7-lauren_boebert.png}
+    \includegraphics[width=0.22\textwidth]{figures/fig_yolow_pics/fig_pic_12-monica_delacruz_.png}
+    \end{center}
+    \subcaption{\footnotesize{Rep. Nancy Mace (SC), Rep. Kat Cammack (FL), Rep. Lauren Boebert (CO), Rep. Monica De La Cruz (TX)}}
+    \begin{center}
+    \includegraphics[width=0.24\textwidth]{figures/fig_yolow_pics/fig_pic_4-lisa_mclain.png}
+    \includegraphics[width=0.24\textwidth]{figures/fig_yolow_pics/fig_pic_6-diana_harshbarger.png} 
+    \includegraphics[width=0.24\textwidth]{figures/fig_yolow_pics/fig_pic_8-mtg.png}
+    \includegraphics[width=0.24\textwidth]{figures/fig_yolow_pics/fig_pic_13-anna_paulina_luna.png}
+    \end{center}
+    \subcaption{\footnotesize{Rep. Lisa McClain (MI), Rep. Diana Harsbarger (TN), Rep. Marjorie Taylor Greene (GA), Rep. Anna Paulina Luna (FL)}}
+    \begin{center}
+    \includegraphics[width=0.27\textwidth]{figures/fig_yolow_pics/fig_pic_2-claudia_tenny.png}
+    \includegraphics[width=0.28\textwidth]{figures/fig_yolow_pics/fig_pic_11-beth_vanduyne.png}
+    \includegraphics[width=0.28\textwidth]{figures/fig_yolow_pics/fig_pic_10-mary_miller.png}
+    \end{center}
+    \subcaption{\footnotesize{Rep. Claudia Tenney (NY), Rep. Beth Van Duyne (TX), Rep. Mary Miller (IL)}}
+    \end{subfigure}
+%\floatfoot{
+%\begin{minipage}{\linewidth}
+%    \raggedright
+    %\footnotesize{Note: From left to right, the top row features Nancy Mace (SC), Kat Cammack (FL), Lauren Boebert (CO), and Anna Paulina Luna (FL). The middle row includes Lisa McClain (MI), Diana Harshbarger (TN), Marjorie Taylor Greene (GA), and Mary Miller (IL). The bottom row consists of Claudia Tenney (NY), Beth Van Duyne (TX), and Monica De La Cruz (TX).}
+%\end{minipage}
+%}
+\end{figure}
+
+
+
+\end{block}
+
+\end{column}
+
+\separatorcolumn
+
+\begin{column}{\colwidth}
+
+\begin{block}{Republican women flex their guns (strategically)}
+
+The average GOP woman posted an average of $7.97$ gun posts, while the average GOP man posted $2.09$. Though Republican women are severely under-represented in the US House, they make up half of the top ten gun posters displayed below.
+\begin{center}
+\includegraphics[scale=0.75]{/home/nath/Pictures/top_12_gp.png}
+\end{center}
+Women appear to post more firearms than men. To examine whether women post firearms as part of a strategy, I examine the concentration of gun posting during campaign and routine periods. 
+
+The figure below displays the overall density of gun posting for men and women. On the left side of the dashed line is the campaign period. On the right is the routine period. HRs post more firearm images during the election period. This trend appears to be heightened for women HRs. 
+\begin{center}
+\includegraphics[scale=1]{/home/nath/Pictures/fig_mw-gender-density.png}
+\end{center}
+%I next test whether women post greater percentages of firearms in the pre-election period than men and . 
+I next apply statistical rigor to the above visualization by testing whether whether or not an HR is a woman predicts percentage of guns posted in the election period (six months before the election). I use the following specification.\footnote{\footnotesize{The outcome is logged becuase it is highly skewed. Direction and significance is not impacted by removing the log.}} $$\log\bigg(\frac{\#\textit{GunPosts}_i}{\#\textit{TotalPosts}_i}\bigg) = \alpha + \nu \textit{Woman}_i + \boldsymbol{\rho} \boldsymbol{X}_i  + \varepsilon_i$$ % \bigg(\frac{\#\textit{GunPosts}_i}{\#\textit{TotalPosts}_i}\bigg)
+The unit of analysis is the HR. $\boldsymbol{X}_i$ is a matrix of covariate controls for HR $i$, including demographics, district characteristics, and partisanship. The quantity of interest is $\nu$.
+% log difference in the proportion of gun-related posts between women and men.
+\begin{center}
+\includegraphics[scale=0.75]{/home/nath/Pictures/wide_gun_plot.png}
+\end{center}
+\end{block}
+Results suggest that women post significantly higher percentages of gun images than men in the election period. This is evidence that GOP women tend to employ gun imagery as a strategy during elections at rates greater than men.
+\end{column}
+
+\separatorcolumn
+
+\begin{column}{\colwidth}
+
+%\begin{block}{Effectively navigating the double bind with firearms}
+\begin{block}{Do women HRs communicate masc. and/or fem. in gun image captions}
+
+%I next examine what HRs communicate when they employ gun imagery.
+
+\begin{enumerate}
+%\item Manually code each caption (1=yes, 0=no) which discusses: women, fighting/aggression, protecting/defending %\textcolor{mypurple}{women}, \textcolor{blue}{fighting/aggression}, \textcolor{myorange}{protecting/defending}
+\item Manually code each image caption by topic as follows: women, fighting/aggression, protecting/defending (1=yes, 0=no)
+%\item Sum the number of mentions of each topic and create $\#\textit{GunPostsWithCaptionTopic}$
+\item Test the following specification for each topic
+$$\log\bigg(\frac{\#\textit{GunPostsWithCaptionTopic}_i}{\#\textit{GunPosts}_i}\bigg) = \alpha + \nu \textit{Woman}_i + \boldsymbol{\rho} \boldsymbol{X}_i + \varepsilon_i$$
+\end{enumerate}
+
+\begin{center}
+\includegraphics[scale=0.7]{/home/nath/Pictures/wide_coef_plot_caps.png}
+\end{center}
+
+Women appear to use gun imagery to emphasize both their masculinity and femininity in gun image captions. This comports with my case studies (ask me)!
+
+\begin{table}[!htb]
+    \centering
+    \begin{tabular}{p{36cm}}
+        \toprule
+        \textbf{Gun post caption examples from women HRs} \\
+        %\toprule
+        \midrule
+        How to \textcolor{myorange}{defend yourself} against sexual assault and \textcolor{mypurple}{men who beat women.} \\
+        \midrule
+        \textcolor{mypurple}{Conservative women}... know \textcolor{blue}{I will fight} to \textcolor{myorange}{protect those rights at all times!} \\
+        \midrule
+        Today was my day to \#homeschool. \textcolor{mypurple}{Raising him \#RIGHT \#BoyMom} \#2A \#Guns \\
+        \midrule
+        \textcolor{myorange}{Teach your} \textcolor{mypurple}{daughter} \textcolor{myorange}{to shoot} because a \textcolor{mypurple}{restraining order is just a piece of paper.} \\
+        \midrule
+	I'm a proud Christian conservative \textcolor{mypurple}{Republican woman who as your next Congresswoman} \textcolor{blue}{will never back down from a fight}
+       \bottomrule
+    \end{tabular}
+    \vspace{0.5cm}  % Add spacing before footer
+\parbox{36cm}{\raisebox{-0.5ex}{\purplesquare{}} = woman, \raisebox{-0.5ex}{\bluesquare{}} = fighting/aggression, \raisebox{-0.5ex}{\yellowsquare{}} = protecting/defending}
+\end{table}
+    
+\end{block}
+
+\begin{block}{Republican women effectively use guns to navigate the double bind}
+
+Finally, I examine the effect of $\textit{Woman}_i \times \log\bigg(\frac{\#\textit{GunPosts}_i}{\#\textit{TotalPosts}_i}\bigg)$ on logged likes per post. %test whether Republican women garner disproportionate support for posting images containing firearms 
+
+\begin{center}
+\includegraphics[scale=0.95]{/home/nath/Pictures/likes_plot.png}
+\end{center}
+
+Women HRs reap disproportionate likes for elevating gun post percentage. These results lend support to the \textbf{targeting the double bind theory}. %Putting all of these results together, I argue that Republican women strategically and effectively use gun imagery to navigate the double bind.
+
+\end{block}
+
+
+\begin{block}{References}
+\nocite{*}
+%\footnotesize{\bibliographystyle{plain}\bibliography{poster}}  
+\scriptsize{\bibliographystyle{plain}\bibliography{poster}}  
+\end{block}
+
+\end{column}
+
+\separatorcolumn
+\end{columns}
+\end{frame}
+
+\end{document}
